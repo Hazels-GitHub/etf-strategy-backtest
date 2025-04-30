@@ -1,0 +1,7 @@
+Mode,Years,Annualized Return,Annualized Volatility,Sharpe Ratio,Max Drawdown
+equal,3,0.1041,0.1305,0.7859,-0.1889
+equal,5,0.0848,0.1288,0.6536,-0.2174
+historical,3,0.0341,0.1163,0.4577,-0.1972
+historical,5,0.0664,0.115,0.6343,-0.2044
+optimal,3,0.0509,0.0414,1.3328,-0.0678
+optimal,5,0.0419,0.0471,1.0432,-0.1049

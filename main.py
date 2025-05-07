@@ -14,15 +14,19 @@ def main():
     etf_files = {
         'VTSMX': 'VTSMX.csv',
         'VGSIX': 'VGSIX.csv',
+        'VTMGX': 'VTMGX.csv',
         'VEIEX': 'VEIEX.csv',
-        'VBMFX': 'VBMFX.csv',
+        'NAESX': 'NAESX.csv',
+        'VIVAX': 'VIVAX.csv',
+        'VISVX': 'VISVX.csv',
         'VIPSX': 'VIPSX.csv',
-        'NAESX': 'NAESX.csv'
+        'VBMFX': 'VBMFX.csv',
+        'VFISX': 'VFISX.csv'
     }
+
     full_paths = {k: os.path.join(data_dir, v) for k, v in etf_files.items()}
     loader = ETFDataLoader(full_paths)
     price_df = loader.price_df
-
     # 2. 初始化模組
     asset_list = list(etf_files.keys())
     optimizer = PortfolioOptimizer(price_df)
